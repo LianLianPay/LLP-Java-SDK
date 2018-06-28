@@ -80,7 +80,7 @@ Content-type: application/json;charset=utf-8
 ```
 
 
-加签时，使用SDK的```genSign```方法进行加签, 其中```prikeyvalue```即为您的私钥：
+加签时，使用SDK的```sign```方法进行加签, 其中```prikeyvalue```即为您的私钥：
 
 ```java
     /**
@@ -95,7 +95,7 @@ Content-type: application/json;charset=utf-8
     }
 ```
 
-验签时， 使用```TraderRSAUtil```的```checkSign()```方法：
+验签时， 使用SDK的```checkSign()```方法，其中```rsa_public```为连连向您提供的公钥：
 
 ```java
     /**
